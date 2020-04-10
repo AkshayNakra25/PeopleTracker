@@ -4,7 +4,8 @@
   It contains the counters for both the parks and restaurants
 */
 import React from 'react';
-import { Constants, MapView, Location, Permissions, Pedometer } from 'expo';
+import * as Location from 'expo'
+import { Constants, MapView, Permissions, Pedometer } from 'expo';
 import { StyleSheet, View, Alert, BackHandler, ImageBackground, FlatList } from 'react-native';
 import AppFooter from '../footer/AppFooter'
 import { Card, CardItem, Text } from 'native-base';
@@ -361,7 +362,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingTop: Constants.statusBarHeight,
+    // paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
   },
   paragraph: {

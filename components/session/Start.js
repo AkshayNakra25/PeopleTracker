@@ -114,14 +114,14 @@ async function checkUser(locations) {
 }
 
 // Invoked to check users location in the background
-TaskManager.defineTask('location', ({ data, error }) => {
-    if (error) {
-        console.log(error.message)
-    }
-    if (data) {
-        const { locations } = data;
-        checkUser(locations);
-    }
-});
+// TaskManager.defineTask('location', ({ data, error }) => {
+//     if (error) {
+//         console.log(error.message)
+//     }
+//     if (data) {
+//         const { locations } = data;
+//         checkUser(locations);
+//     }
+// });
 
 export default connect()(Start)
