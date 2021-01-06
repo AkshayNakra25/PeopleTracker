@@ -8,7 +8,7 @@
   },
   "proxy": "http://localhost:5000",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "expo": "^34.0.0",
     "lottie-react-native": "^3.3.2",
     "moment": "^2.24.0",
